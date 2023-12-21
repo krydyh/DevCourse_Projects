@@ -1,0 +1,8 @@
+prefix=/home/yeonghu/programmers_project/devel
+
+Name: OneWeekProject
+Description: Description of OneWeekProject
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
