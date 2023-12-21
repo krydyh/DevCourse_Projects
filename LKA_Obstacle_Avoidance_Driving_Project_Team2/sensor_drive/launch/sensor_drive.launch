@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- sensor_drive -->
+  <node pkg="sensor_drive" type="sensors_drive.py" name="sensor_drive" output="screen" />
+
+  <!-- motor node -->
+  <include file="$(find xycar_motor)/launch/xycar_motor.launch" />
+
+  <!-- lidar node -->
+  <include file="$(find xycar_lidar)/launch/lidar_noviewer.launch" />
+
+  <!-- ultrasonic node -->
+  <include file="$(find xycar_ultrasonic)/launch/xycar_ultrasonic_noviewer.launch" />
+
+</launch>
